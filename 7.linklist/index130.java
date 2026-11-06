@@ -24,13 +24,16 @@ public class index130{
 
         Node head = n1;
         Node temp = head;
-        int count = 0;
+        int target = 30;
         while(temp!=null){
-            System.out.println(temp.data);
+            if(temp.data == target){
+                System.out.println("Target found: " + temp.data);
+                break;
+            }
+            
             temp = temp.next;
-            count ++;
         }
-        System.out.println("Total number of nodes in the linked list: " + count);
+        
 
     }
 }
